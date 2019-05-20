@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+img{
+    border: 0;
+}
+.clr{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul,address,img{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@font-face{
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: proximanova-bold;
+    src: url(../fonts/proximanova-bold.ttf);
+}
+@font-face{
+    font-family: proxima-nova-regular;
+    src: url(../fonts/proxima-nova-regular.ttf);
+}
+@font-face{
+    font-family: Proxima-Nova-Semibold;
+    src: url(../fonts/Proxima-Nova-Semibold.ttf);
+}
+body {
+    
+}
+
+html {
+    
+}
+header #header{
+    background: #143e6e;
+    border-top: 6px solid #0d2f57;
+}
+header #header .mail_info ul{
+    padding:5px 0;
+}
+header #header ul li{
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    font-family: Montserrat-Light;
+    
+}
+header #header ul li span{
+    font-size: 16px;
+    top: 4px;
+    margin-right: 10px;
+    
+}
+header #header .border_dot{
+    border-left: 2px dotted #fff;
+    margin-left: 8px;
+    padding-left: 7px;
+}
+header #header ul li form select{
+    width: 75px;
+    background: url(../images/icon1.png) no-repeat;
+    background-size: cover;
+    background-attachment: 5px 0px !important;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    cursor:pointer;
+    margin-right: 14px;
+    margin-top: 6px;
+    border-right: 1px dotted #fff; 
+}
+header #header ul li form select option{
+    border-top: 1px dotted #fff; 
+}
+
+header #header .logo ul li a{
+    color: #fff;
+    font-size: 23px;
+    margin-right: 15px
+}
+header #header .logo ul li:hover a{
+    color: #0e61c0;
+}
+header #header .logo ul li:last-child a{
+    margin-right: 0;
+}
+header nav{
+    background: #ffffff;
+    position: relative;
+    z-index: 9999
+}
+header nav img{
+    margin: 18px 0;
+}
+header nav ul li{
+    float: left;
+    margin-left: 42px;
+}
+header nav ul li a{
+    color: #143e6e;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 92px;
+    display: block;
+    font-family: Montserrat-Regular;
+    transition: all linear 0.3s;
+    
+}
+header nav ul li:hover a ,header nav ul li .active{
+    color: #aaaaaa;
+    border-bottom: 3px solid #0e61c0;
+}
+header nav{}
+header nav{}
+header nav{}
+#banner{
+    background: url(../images/banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .monitor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 140px;
+    
+}
+#banner .monitor img{
+    transform: scale(1.08);
+    z-index: 0;
+    position: relative;
+}
+#banner .monitor span{
+    position: absolute;
+    width: 75%;
+    height: 4%;
+    z-index: 999;
+    top: -1%;
+    right: 0%;
+}
+#banner .monitor span imd{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+#banner #first-slider h3{
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: Montserrat-Light;
+    margin-top: 87px;
+}
+#banner #first-slider h4{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+}
+#banner #first-slider p{
+    color: #fff;
+    font-size: 18px;
+    font-family: Montserrat-Light;
+    padding: 30px 0;
+}
+#banner #first-slider a{
+    color: #fff;
+    background: #33d00f;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+    display: inline-block;
+    margin-bottom: 100px;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+#banner #first-slider a:hover{
+    color: #33d00f;
+    background: #fff;
+    transition: all linear 0.3s;
+}
+#banner #first-slider img{
+    width: 100%;
+    margin-top: 3%;
+}
+#banner #first-slider .carousel-indicators{
+    margin-left: -69%
+}
+#banner .carousel-indicators li{
+    background: #fff;
+}
+#banner .carousel-indicators .active{
+    background: radial-gradient(#fff 50%, rgba(13, 13, 13, 0) 50%);
+    border: 1px solid #fff;
+}
+#variety{
+    background: #fff;
+    padding: 80px 0;
+}
+#variety img{
+    margin-left: 25%;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+#variety h6{
+    color: #143e6e;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: proximanova-bold;
+}
+#variety p{
+    color: #323333;
+    font-size: 14px;
+    margin-bottom: 24px;
+    font-family: proxima-nova-regular;
+}
+#variety a{
+    color: #fff;
+    background: #33d00f;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: proximanova-bold;
+    transition: all linear 0.3s;
+}
+#variety a:hover{
+    background: #0e61c0;
+}
+#explore{
+    background: #e3e9ec;
+}
+#explore .project{
+    padding-top: 77px;
+}
+#explore .project h3{
+    color: #143e6e;
+    font-size: 40px;
+    font-family: Myriad Pro;
+    text-transform: uppercase;
+}
+#explore .project h4{
+    color: #143e6e;
+    font-size: 24px;
+    font-family: proxima-nova-regular;
+    word-spacing: -3px;
+    padding: 12px 0 16px;
+}
+#explore .project p{
+    color: #333333;
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+    margin-bottom: 25px;
+}
+#explore .project ul li{
+    float: left;
+    margin-right: 18px;
+    background: #0e61c0;
+    border-radius: 5px;
+}
+#explore .project ul li:last-child{
+    background: #0edc17;
+}
+#explore .project ul li a{
+    color: #fff;
+    font-size: 15px;
+    font-family: proximanova-bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 16px
+}
+#explore .img{
+    padding-top: 47px;
+}
+#explore .project ul li:hover a{
+    background: #0edc17;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+#explore .project ul li:hover:last-child  a{
+    background: #0e61c0;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+
+#skills{
+    background: #fff;
+}
+#skills img{
+    margin-top: 58px;
+}
+#skills .space{
+    padding-bottom: 95px;
+}
+#skills h2{
+    color: #143e6e;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Proxima-Nova-Semibold;
+    margin: 106px 0 16px;
+}
+#skills h5{
+    color: #143e6e;
+    font-size: 24px;
+    font-family: proxima-nova-regular;
+    margin-bottom: 42px;
+}
+#skills ul li{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+#skills ul li span{
+    width: 50px;
+    height: 50px;
+    background: #e3e9ec;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 30px;
+    color: #143e6e;
+    border-radius: 50%;
+    font-family: proxima-nova-regular;
+    cursor: pointer;
+}
+#skills ul li p{
+    color: #333333;
+    font-size: 16px;
+    font-family: proxima-nova-regular;
+    height: 50px;
+    cursor: pointer;
+}
+#skills ul li:hover span, #skills ul li:hover p{
+    color: #fff;
+    background: #0e61c0;
+    display: block;
+    border-radius: 50% 0 0 50%;
+}
+#skills ul li:hover .text_bg{
+    background: #0e61c0;
+}
+#inverted{
+    background: url(../images/back2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+#inverted .replace h3{
+    color: #143e6e;
+    font-size: 40px;
+    font-family: Proxima-Nova-Semibold;
+    text-transform: uppercase;
+}
+#inverted .replace h4{
+    color: #143e6e;
+    font-size: 24px;
+    font-family: proxima-nova-regular;
+    word-spacing: -3px;
+    padding: 12px 0 16px;
+}
+#inverted .replace p{
+    color: #333333;
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+    margin-bottom: 25px;
+}
+#inverted .replace ul li{
+    float: left;
+    margin-right: 18px;
+    background: #0e61c0;
+    border-radius: 5px;
+}
+#inverted .replace ul li:last-child{
+    background: #0edc17;
+}
+#inverted .replace ul li a{
+    color: #fff;
+    font-size: 15px;
+    font-family: proximanova-bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 16px
+}
+#inverted .img{
+    padding-top: 47px;
+}
+#inverted .replace ul li:hover a{
+    background: #0edc17;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+#inverted .replace ul li:hover:last-child  a{
+    background: #0e61c0;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+
+#testmonial{
+    background: #fff;
+    padding: 80px 0;
+}
+#testmonial h2{
+    color: #143e6e;
+    font-size: 40px;
+    font-family: Proxima-Nova-Semibold;
+    text-transform: uppercase;
+}
+#testmonial p{
+    color: #143e6e;
+    font-size: 24px;
+    font-family: proxima-nova-regular;
+    margin-bottom: 40px;
+}
+#testmonial .myslick img{
+    width: 80%;
+    margin-left: 10%;
+}
+#testmonial .myslick h3{
+    color: #143e6e;
+    font-size: 24px;
+    font-family: Proxima-Nova-Semibold;
+    margin-top: 20px;
+}
+#testmonial .myslick h4{
+    color: #989898;
+    font-size: 16px;
+    font-family: proxima-nova-regular;
+}
+#testmonial .myslick p{
+    color: #323333;
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+    margin: 25px 15px;
+}
+#testmonial .myslick ul{
+    margin-left: 25%;
+}
+#testmonial .myslick ul li{
+    float: left;
+    margin: 4px;
+}
+#testmonial .myslick ul li a{
+    color: #fff;
+}
+#testmonial .myslick ul li:hover a{
+    color: #c3b9b9;
+}
+#testmonial .myslick ul li i{
+    width: 40px;
+    height: 40px;
+    background: #44619d;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#testmonial .myslick ul li .fa-twitter{
+    background: #00aced;
+}
+#testmonial .myslick ul li .fa-linkedin{
+    background: #007bb6;
+}
+#testmonial .myslick button{
+    display: none !important;
+}
+#twitter{
+    background: #00aced;
+    position: relative;
+}
+#twitter a i{
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+#twitter p{
+    color: #fff;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    line-height: 64px;
+    margin-left: 58px;
+}
+#twitter span{
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+}
+#fliker{
+    background: #0d2f57;
+    padding: 68px 0 90px;
+}
+#fliker h6{
+    color: #fff;
+    font-size: 18px;
+    font-family: Proxima-Nova-Semibold;
+    margin-bottom: 30px;
+}
+#fliker .img{
+    margin-bottom: 15px;
+}
+#fliker .menu a{
+    color: #fff;
+    font-size: 14px;
+    font-family: Proxima-Nova-Semibold;
+    display: inline-block;
+    background: #0e61c0;
+    padding: 6px 13px;
+    margin: 0 3px 8px;
+}
+#fliker .menu a:hover{
+    color: #0e61c0;
+    background: #fff;
+}
+#fliker .notic ul{
+    margin-top: -5px;
+}
+#fliker .notic ul li{
+    position: relative;
+    margin-bottom: 5px;
+}
+#fliker .notic ul li img{
+    position: absolute;
+    top: 5px;
+}
+#fliker .notic ul li .text{
+    margin-left: 58px;
+}
+#fliker .notic ul li a{
+    color: #33d00f;
+    font-size: 13px;
+    font-family: Proxima-Nova-Semibold;
+}
+#fliker .notic ul li:hover a{
+    color: #8fe27d;
+}
+#fliker .notic ul li p{
+    color: #fff;
+    font-size: 12px;
+    font-family: proxima-nova-regular;
+}
+#fliker .design h5{
+    color: #fff;
+    font-size: 30px;
+    font-family: proximanova-bold;
+}
+#fliker .design h5 .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+#fliker .design h5 .text{
+    font-family: proxima-nova-regular;
+}
+#fliker .design p{
+    color: #fff;
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+    padding: 27px 0;
+}
+#fliker .design a{
+    color: #33d00f;
+    font-size: 14px;
+    font-family: Proxima-Nova-Semibold;
+    text-align: justify;
+}
+#fliker .design a:hover{
+    color: #8fe27d;
+}
+#foder-menu{
+    background: #07213f;
+}
+#foder-menu nav a{
+    color: #fff;
+    font-size: 13px;
+    font-family: Montserrat-Regular;
+    line-height: 50px;
+}
+#foder-menu ul li{
+    float: left;
+}
+#foder-menu ul li a{
+    font-weight: 600;
+    margin-right: 20px;
+}
+#foder-menu ul li a:hover , #foder-menu ul li .active{
+    color: #828e96;
+}
+#foder{
+    background: #1b1b1b;
+    padding: 20px 0;
+}
+#foder h4{
+    color: #fff;
+    font-size: 16px;
+    font-family: Proxima-Nova-Semibold;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#foder p{
+    color: #fff;
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+}
+#foder p a{
+    color: #33d00f;
+}
+#foder p a:hover{
+    color: #0fbad0;
+}

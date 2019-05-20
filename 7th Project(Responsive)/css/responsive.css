@@ -1,0 +1,300 @@
+@media(min-width:768px) and (max-width:991px){
+    
+    header #header .logo ul li a{
+        margin-right: 22px;
+    }
+    header nav img{
+        width: 60%;
+    }
+    header nav ul li{
+        margin-left: 24px;
+    }
+    header nav ul li a{
+        line-height: 66px;
+    }
+    #banner .monitor span{
+        width: 63%;
+        top: 0%;
+        right: 7%;    
+    }
+    #banner #first-slider img {
+        width: 100%;
+        margin-top: 14%;
+        margin-left: 5px;
+    }
+    #banner #first-slider h3{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    #banner #first-slider h4{
+        font-size: 30px
+    }
+    #banner #first-slider p{
+        font-size: 13px;
+        padding: 20px 0;
+    }
+    #banner #first-slider a{
+        font-size: 14px;
+        margin-bottom: 80px;
+    }
+    #variety{
+        padding: 50px 0;
+    }
+    #variety img{
+        margin-left: 50px;
+        width: 50%;
+    }
+    #variety h6{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #variety p{
+        font-size: 12px;
+        margin-bottom: 17px;
+    }
+    #explore{
+        padding-bottom: 40px;
+    }
+    #explore .project h3{
+        font-size: 35px;
+    }
+    #explore .project {
+        padding-top: 45px;
+    }
+    #explore .project h4{
+        font-size: 19px;
+        padding: 1px 0 6px;
+    }
+    #explore .project p{
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+    #explore .project ul li a{
+        font-size: 10px;
+        padding: 7px 17px;
+    }
+    #skills h2{
+        font-size: 25px;
+        margin: 57px 0 5px;
+    }
+    #skills h5{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #skills ul li{
+        margin-bottom: 5px;
+    }
+    #skills ul li p{
+        font-size: 12px;
+        height: 35px;
+    }
+    #skills ul li span{
+        width: 35px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+    #inverted{
+        padding: 30px 0;
+    }
+    #inverted .replace h3{
+        font-size: 32px;
+    }
+    #inverted .replace h4{
+        font-size: 19px;
+        padding: 2px 0 4px;
+    }
+    #inverted .replace p{
+        font-size: 11px;
+    }
+    #inverted .replace ul li a{
+        font-size: 10px;
+    }
+    #testmonial{
+        padding: 41px 0;
+    }
+    #testmonial h2{
+        font-size: 30px;
+    }
+    #testmonial p{
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    #testmonial .myslick img{
+        width: 60%;
+        margin-left: 17%;
+    }
+    #testmonial .myslick h3{
+        font-size: 20px;
+    }
+    #testmonial .myslick h4{
+        font-size: 13px;
+    }
+    #testmonial .myslick p{
+        font-size: 11px;
+        margin: 14px 15px;
+    }
+    #testmonial .myslick ul li i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #twitter a i{
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+        line-height: 30px;
+        top: 2px;
+    }
+    #twitter span{
+        font-size: 16px;
+    }
+    #twitter p{
+        font-size: 10px;
+        line-height: 33px;
+        margin-left: 35px;
+    }
+    #fliker{
+        padding: 33px 0;
+    }
+    #fliker h6{
+        font-size: 14px;
+        margin-bottom: 19px;
+    }
+    #fliker .img{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #fliker .menu a{
+        font-size: 10px;
+        padding: 3px 4px;
+        margin: 0 0px 5px;
+    }
+    #fliker .notic ul li a{
+        font-size: 11px;
+    }
+    #fliker .notic ul li p{
+        font-size: 11px;
+    }
+    #fliker .design h5 .icon{
+        width: 38px;
+        height: 38px;
+        line-height: 30px;
+    }
+    #fliker .design h5{
+        font-size: 21px;
+    }
+    #fliker .design p{
+        font-size: 11px;
+        padding: 11px 0;
+    }
+    #foder-menu nav a{
+        font-size: 10px;
+        line-height: 40px;
+    }
+    #foder-menu ul li a{
+        margin-right: 18px;
+    }
+    
+    
+}
+
+@media(min-width:320px) and (max-width:767px){
+    
+    header #header .mail_info ul{
+        padding: 0;
+    }
+    header #header ul li{
+        font-size: 10px;
+    }
+    header #header .logo ul{
+        padding: 6px auto;
+    }
+    header #header .logo ul li a{
+        font-size: 14px;
+        margin-right: 10px
+    }
+    header nav{
+        background: #d90064;
+    }
+    header nav img {
+        margin: 10px 0;
+        width: 37%;
+    }
+    .navbar-toggle{
+        border-color: #5e00f5;
+    }
+    .navbar-toggle:hover , .navbar-toggle:focus{
+        border-color: #00c6f5;
+    }
+    .navbar-toggle .icon-bar{
+        background: #5e00f5;
+    }
+    .navbar-toggle:hover .icon-bar , .navbar-toggle:focus .icon-bar{
+        border: 1px solid #00c6f5;
+    }
+    header nav ul li{
+        float: none;
+        margin-left: 0;
+        display: block;
+    }
+    header nav ul li a{
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+    header nav ul li:hover a, header nav ul li .active{
+        border-bottom: 1px solid #5e00f5;
+    }
+    #banner{
+        background: url(../images/ulysse-nardin-large-1152x864.jpg) no-repeat;
+        background-position: 13% 15%;
+        
+    }
+    #banner #first-slider h3{
+        font-size: 16px;
+        position: relative;
+    }
+    #banner #first-slider h4{
+        font-size: 22px;
+        position: relative;
+        z-index: 999;
+    }
+    #banner #first-slider p{
+        font-size: 14px;
+        position: relative;
+        z-index: 999;
+    }
+    #banner #first-slider a{
+        font-size: 10px;
+    }
+    #banner #first-slider img{
+        display: none;
+    }
+    #banner .monitor img{
+        display: none;
+    }
+    #variety img{
+        margin-left: 21%;
+    }
+    #variety a{
+        margin-bottom: 48px;
+    }
+    #skills ul li:hover span, #skills ul li:hover p{
+        color: #fff;
+        background: #0e61c0;
+        display: inline-block;
+        border-radius: 50%;
+        transition: all linear 0.4s;
+    }
+    #foder-menu{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter With LightBox</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/pltun.css" />
+        <link rel="stylesheet" href="css/lihtbx.css">
+<style>
+body {
+  margin: 0;
+  min-height: 1200px;
+  background-color: #fafafa;
+}
+
+.filter a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: #003;
+  background: #eee;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 9px
+}
+
+.filter a:hover { background: #8ad }
+
+.filter {
+  padding: 50px;
+  text-align: center
+}
+
+.gallery a img {
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+
+.gallery a {
+  width: 33.33%;
+  transition: all 0.2s;
+  display: block;
+  float: left;
+  opacity: 1;
+  height: auto;
+}
+
+.gallery .hide, .gallery .pophide {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+.gallery .pop {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0px 1000px rgba(0,0,0,0.5);
+}
+
+.pop:after {
+  content: "\00D7";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.pop:hover:after { opacity: 1 }
+</style>
+</head>
+<body>
+ 
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin-top:150px; text-align:center;">Gallery Content Filter Example</h1>
+<div class="filter" style="margin-top:30px;"> <a href="#all">ALL</a> <a href="#cats">CATS</a> <a href="#food">Food</a> <a href="#animals">Animals</a> </div>
+<div class="gallery"> <a href="#" class="cats" ><img src="images/webdesign-1.jpg"></a> <a href="#" class="animals"><img src="http://lorempixel.com/640/480/animals/1"></a> <a href="#" class="cats" ><img src="http://lorempixel.com/640/480/cats/2"></a> <a href="#" class="cats" ><img src="http://lorempixel.com/640/480/cats/3"></a> <a href="#" class="food" ><img src="http://lorempixel.com/640/480/food/1"></a> <a href="#" class="food" ><img src="http://lorempixel.com/640/480/food/2"> <a href="#" class="animals" ><img src="http://lorempixel.com/640/480/animals/2"></a> <a href="#" class="food" ><img src="http://lorempixel.com/640/480/food/3"></a> <a href="#" class="animals" ><img src="http://lorempixel.com/640/480/animals/3"></a> </div>
+  
+   <div class="wrapper">
+   	<div class="portfolio-content">	
+    <h1 class="title-page">jQuery Filter Light Box</h1>
+    <div class="menuitem">
+	  <ul class="portfolio-categ filter">
+      <li>Categories:</li>
+      <li class="all active"><a href="#">All</a></li>
+         	<li class="cat-item-1"><a href="#" title="Category 1">Category 1</a>
+            </li>
+                <li class="cat-item-2"><a href="#" title="Category 2">Category 2</a>
+            </li>
+                <li class="cat-item-3"><a href="#" title="Category 3">Category 3</a>
+            </li>
+                <li class="cat-item-4"><a href="#" title="Category 4">Category 4</a>
+            </li>
+        </ul>
+        </div>
+       
+<ul class="portfolio-area">	
+ 		
+            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">	
+            <div>
+           <span class="image-block">
+            <a class="image-zoom" href="images/webdesign-1.jpg" rel="prettyPhoto[gallery]" title="Wall-E">
+            
+        <img width="225" height="140" src="images/webdesign-1.jpg" width="225" height="140" /> 
+               <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>               
+            </a>
+            </span>
+           <div class="home-portfolio-text">
+            <h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h2>
+            <p class="post-subtitle-portfolio">released: 2008</p>
+            </div>
+
+            </div>	
+            </li>			
+				            
+			                        		
+               		<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+            <a class="image-zoom" href="images/webdesign-1.jpg" rel="prettyPhoto[gallery]" title="Wall-E">
+            
+        <img width="225" height="140" src="images/webdesign-1.jpg" width="225" height="140" /> 
+               <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>               
+            </a>
+            </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Up">Up</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2009</p>
+					</div>
+                    
+					</div>	
+                    </li>				
+				 
+                        		
+               			<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+            <a class="image-zoom" href="images/webdesign-1.jpg" rel="prettyPhoto[gallery]" title="Wall-E">
+            
+        <img width="225" height="140" src="images/webdesign-1.jpg" width="225" height="140" /> 
+               <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>               
+            </a>
+            </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Cars 2">Cars 2</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>		
+				            
+			                             		
+               			<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">	
+			        <div>
+                   <span class="image-block">
+            <a class="image-zoom" href="images/webdesign-1.jpg" rel="prettyPhoto[gallery]" title="Wall-E">
+            
+        <img width="225" height="140" src="images/webdesign-1.jpg" width="225" height="140" /> 
+               <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>               
+            </a>
+            </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Toy Story 3">Toy Story 3</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			                            		
+               		<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic5.jpg" rel="prettyPhoto[gallery]" title="Finding Nemo"><img width="225" height="140" src="images/thumbs/p5.jpg" alt="Finding Nemo" title="Finding Nemo" />
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                     
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Finding Nemo">Finding Nemo</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2003</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     		              		
+               		<li class="portfolio-item2" data-id="id-5" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic6.jpg" rel="prettyPhoto[gallery]" title="Lorax"><img width="225" height="140" src="images/thumbs/p6.jpg" alt="Lorax" title="Lorax" /> 
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Lorax">Lorax</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2012</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     	             	
+               		<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic7.jpg" rel="prettyPhoto[gallery]" title="Happy Feet 2"><img width="225" height="140" src="images/thumbs/p7.jpg" alt="Happy Feet 2" title="Happy Feet 2" /> 
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Happy Feet 2">Happy Feet 2</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>	
+		                
+            		
+                    <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic8.jpg" rel="prettyPhoto[gallery]" title="Tangled"><img width="225" height="140" src="images/thumbs/p8.jpg" alt="Tangled" title="Tangled" />
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                     
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Tangled">Tangled</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     
+		            <li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic9.jpg" rel="prettyPhoto[gallery]" title="Kung Fu Panda 2"><img width="225" height="140" src="images/thumbs/p9.jpg" alt="Kung Fu Panda 2" title="Kung Fu Panda 2" />
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                     
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Kung Fu Panda 2">Kung Fu Panda 2</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>			
+				            
+			     
+		                
+            		 <li class="portfolio-item2" data-id="id-9" data-type="cat-item-2">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic10.jpg" rel="prettyPhoto[gallery]" title="Madagascar 3"><img width="225" height="140" src="images/thumbs/p10.jpg" alt="Madagascar 3" title="Madagascar 3" /> 
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Madagascar 3">Madagascar 3</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2012</p>
+					</div>
+                    
+					</div>	
+                    </li>			            
+			     
+		                
+            		 <li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic11.jpg" rel="prettyPhoto[gallery]" title="Rango"><img width="225" height="140" src="images/thumbs/p11.jpg" alt="Rango" title="Rango" /> 
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                    
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Rango">Rango</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2011</p>
+					</div>
+                    
+					</div>	
+                    </li>	
+				            
+			     
+		            <li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">	
+			        <div>
+                   <span class="image-block">
+					<a class="image-zoom" href="images/big/pic12.jpg" rel="prettyPhoto[gallery]" title="Shrek Forever After"><img width="225" height="140" src="images/thumbs/p12.jpg" alt="Shrek Forever After" title="Shrek Forever After" />
+                   <div class="overly">
+                   <p><i class="fa fa-plus"></i></p> 
+               </div>                     
+                    </a>
+                    </span>
+                   <div class="home-portfolio-text">
+					<h2 class="post-title-portfolio"><a href="#" rel="bookmark" title="Shrek Forever After">Shrek Forever After</a></h2>
+                    <p class="post-subtitle-portfolio">released: 2010</p>
+					</div>
+                    
+					</div>	
+                    </li>
+
+            
+                        <div class="column-clear"></div>
+            		</ul><!--end portfolio-area -->
+		</div><!--end portfolio-content -->	
+</div>
+  <div class="section secondary-section " id="portfolio">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1>Have You Seen our Works?</h1>
+                    <p>Sorry Sir Problem Korle Reload Koren.Because Ato plugin ek sathe Problem kortecilo.</p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">All</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#noAction">Web</a>
+                    </li>
+                    <li class="filter" data-filter="photo">
+                        <a href="#noAction">Photo</a>
+                    </li>
+                    <li class="filter" data-filter="identity">
+                        <a href="#noAction">Identity</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/webdesign-1.jpg" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/webdesign-1.jpg" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Life is a song - sing it. Life is a game - play it. Life is a challenge - meet it. Life is a dream - realize it. Life is a sacrifice - offer it. Life is love - enjoy it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/webdesign-1.jpg" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>How far you go in life depends on your being tender with the young, compassionate with the aged, sympathetic with the striving and tolerant of the weak and strong. Because someday in your life you will have been all of these.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio04.png" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Project for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio05.png" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>We need to give each other the space to grow, to be ourselves, to exercise our diversity. We need to give each other space so that we may both give and receive such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio06.png" alt="project 6">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+                    <!-- Start details for portfolio project 7 -->
+                    <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio07.png" alt="project 7">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Always continue the climb. It is possible for you to do whatever you choose, if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 7 -->
+                    <!-- Start details for portfolio project 8 -->
+                    <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio08.png" alt="project 8">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>What if you gave someone a gift, and they neglected to thank you for it - would you be likely to give them another? Life is the same way. In order to attract more of the blessings that life has to offer, you must truly appreciate what you already have.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 8 -->
+                    <!-- Start details for portfolio project 9 -->
+                    <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio09.png" alt="project 9">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>I learned that we can do anything, but we can't do everything... at least not at the same time. So think of your priorities not in terms of what activities you do, but when you do them. Timing is everything.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 9 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio01.png" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio02.png" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio03.png" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio04.png" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio05.png" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio06.png" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio07.png" alt="project 7" />
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio08.png" alt="project 8">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio09.png" alt="project 9">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   
+   
+   
+   
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/jquery.quicksand.js"></script>
+    <script src="js/script.js"></script>
+   <script src="js/jquery.prettyPhoto.js"></script>
+   <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+<script>
+
+$('.filter a').click(function(e) {
+  e.preventDefault();
+  var a = $(this).attr('href');
+  a = a.substr(1);
+  $('.gallery a').each(function() {
+    if (!$(this).hasClass(a) && a != 'all')
+      $(this).addClass('hide');
+    else
+      $(this).removeClass('hide');
+  });
+
+});
+
+$('.gallery a').click(function(e) {
+  e.preventDefault();
+  var $i = $(this);
+  $('.gallery a').not($i).toggleClass('pophide');
+  $i.toggleClass('pop');
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

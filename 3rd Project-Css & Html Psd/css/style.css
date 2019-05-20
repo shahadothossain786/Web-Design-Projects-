@@ -1,0 +1,518 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0px;
+}
+ul,ol{
+    list-style-type: none;
+}
+body{
+    min-width: 80%;
+}
+.clr{
+    clear: both;
+}
+#container{
+    width: 900px;
+    margin: 0 auto;
+}
+@font-face{
+    font-family: gotham-book;
+    src: url(../fonts/gotham/gotham-book.ttf);
+}
+@font-face{
+    font-family: gotham-bold;
+    src: url(../fonts/gotham/GOTHAM-BOLD.ttf);
+}
+@font-face{
+    font-family: gotham-medium;
+    src: url(../fonts/gotham/GOTHAM-MEDIUM.ttf);
+}
+@font-face{
+    font-family: georgia-italic;
+    src: url(../fonts/georgia/georgia-italic.ttf);
+}
+@font-face{
+    font-family: proxima-nova-reg;
+    src: url(../fonts/proxima nova/Proxima-Nova-Regular.otf);
+}
+/*common codes ends here*/
+#header{
+    height: 102px;
+}
+#header .logo{
+    float: left;
+    width: 440px;
+}
+#header .logo_text{
+    width: 80px;
+    height: 102px;
+}
+#header .logo_text a h1{
+    font-family: gotham-book;
+    font-size: 25px;
+    color: #4c4c4c;
+    line-height: 102px;
+}
+#header .menu{
+    float: left;
+    width: 460px;
+}
+#header .menu ul{
+    float: right;
+}
+#header .menu ul li{
+    float: left;
+}
+#header .menu ul li a{
+    font-family: gotham-medium;
+    font-size: 12px;
+    color: #a7a7a7;
+    line-height: 102px;
+    padding: 0px 0px 0px 79px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*end of header logo & menu*/
+#banner_bg_img{
+    background: url(../images/banner_img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.banner_img_text h2{
+    font-family: gotham-bold;
+    font-size: 40px;
+    color: #303030;
+    padding-top: 140px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+.banner_img_text p{
+    font-family: georgia-italic;
+    padding-top: 33px;
+    padding-bottom: 60px;
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: center;
+    position: relative;
+    word-spacing: 2px;
+    
+}
+.fa_icon{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background: #e8ebe9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 49%;
+}
+.fa_icon_two{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.fa_icon i{
+    text-align: center;
+    color: #525252;
+    padding-left: 16.5px;
+    padding-top: 11px;
+    font-weight: 700;
+}
+/*end of banner & text*/
+.feature{
+    height: 200px;
+    margin-top: 48px;
+}
+.feature h2{
+    font-family: gotham-bold;
+    font-size: 30px;
+    color: #303030;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.feature h2::after{
+    content: '';
+    width: 240px;
+    height: 3px;
+    background: #303030;
+    position: absolute;
+    bottom: -18px;
+    right: 36.7%;
+}
+.feature p{
+    font-family: proxima-nova-reg;
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: center;
+    padding-top: 53px;
+    line-height: 26px;
+}
+.feature_img{
+    height: 700px;
+}
+.padding_left{
+    margin-left: 53px;
+}
+.feature_img img{
+    margin-bottom: 56px;
+}
+/*end of feature & Image*/
+#team_bg{
+    height: 535px;
+    background: #f3f3f3;
+}
+.team_text{
+    padding-top: 50px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+.team_text h2{
+    font-family: gotham-bold;
+    font-size: 30px;
+    color: #303030;
+    padding-bottom: 20px;
+    position: relative;
+}
+.team_text h2::after{
+    content: '';
+    width: 184px;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    background: #303030;
+    right: 39%;
+}
+.team_text p{
+    font-family: proxima-nova-reg;
+    font-size: 16px;
+    color: #5a5a5a;
+    padding-top: 34px;
+    line-height: 24px;
+}
+.team_image_one{
+    width: 210px;
+    height: 210px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -webkit-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -moz-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -mos-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -o-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    margin-right: 20px;    
+}
+.team_image_one img{
+    box-shadow: 0px 0px 4px 4px #ededed;
+    -webkit-box-shadow:
+    -moz-box-shadow:
+    -mos-box-shadow: 
+    -o-box-shadow:
+    margin-top: 17px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+}
+.team_image_one h3{
+    font-family: gotham-bold;
+    font-size: 16px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.team_image_one p{
+    font-family: georgia-italic;
+    font-size: 12px;
+    color: #303030;
+    padding-top: 12px;
+}
+.team_image_one ul{
+    margin-top: 15px;
+    margin-left: 64px;
+}
+.team_image_one ul li{
+    float: left;
+}
+.team_image_one ul li a{
+    
+}
+.team_image_one ul li i{
+    color: #7f7f7f;
+    margin-right: 20px;
+}
+/*end of 1st team image*/
+.team_image_two{
+    width: 210px;
+    height: 210px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -webkit-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -moz-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -mos-box-shadow: 0px 0px 4px 4px #e1e1e1; 
+    -o-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    margin-right: 20px;    
+}
+.team_image_two img{
+    box-shadow: 0px 0px 4px 4px #ededed;
+    -webkit-box-shadow: 0px 0px 4px 4px #ededed;
+    -moz-box-shadow: 0px 0px 4px 4px #ededed;
+    -mos-box-shadow: 0px 0px 4px 4px #ededed; 
+    -o-box-shadow: 0px 0px 4px 4px #ededed;
+    margin-top: 17px;
+    border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+}
+.team_image_two h3{
+    font-family: gotham-bold;
+    font-size: 16px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.team_image_two p{
+    font-family: georgia-italic;
+    font-size: 12px;
+    color: #303030;
+    padding-top: 12px;
+}
+.team_image_two ul{
+    margin-top: 15px;
+    margin-left: 76px;
+}
+.team_image_two ul li{
+    float: left;
+}
+.team_image_two ul li a{
+    
+}
+.team_image_two ul li i{
+    color: #7f7f7f;
+    margin-right: 20px;
+}
+/*end of 2nd team Image*/
+.team_image_three{
+    width: 210px;
+    height: 210px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -webkit-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -moz-box-shadow: 0px 0px 4px 4px #e1e1e1;
+    -mos-box-shadow: 0px 0px 4px 4px #e1e1e1; 
+    -o-box-shadow: 0px 0px 4px 4px #e1e1e1;
+}
+.team_image_three img{
+    box-shadow: 0px 0px 4px 4px #ededed;
+    -webkit-box-shadow: 0px 0px 4px 4px #ededed;
+    -moz-box-shadow: 0px 0px 4px 4px #ededed;
+    -mos-box-shadow: 0px 0px 4px 4px #ededed; 
+    -o-box-shadow: 0px 0px 4px 4px #ededed;
+    margin-top: 17px;
+    border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+}
+.team_image_three h3{
+    font-family: gotham-bold;
+    font-size: 16px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.team_image_three p{
+    font-family: georgia-italic;
+    font-size: 12px;
+    color: #303030;
+    padding-top: 12px;
+}
+.team_image_three ul{
+    margin-top: 15px;
+    margin-left: 76px;
+}
+.team_image_three ul li{
+    float: left;
+}
+.team_image_three ul li a{
+    
+}
+.team_image_three ul li i{
+    color: #7f7f7f;
+    margin-right: 20px;
+}
+/*end of team section */
+#contact_section{
+    margin-top: 48px;
+}
+.contact_head{
+    height: 85px;
+    text-align: center;
+}
+.contact_head h2{
+    font-family: gotham-bold;
+    font-size: 30px;
+    color: #303030;
+    position: relative;
+}
+.contact_head h2::after{
+    content: '';
+    width: 180px;
+    height: 3px;
+    background: #303030;
+    position: absolute;
+    bottom: -17px;
+    right: 40%;
+}
+.contact_map{
+    width: 320px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 73px;
+}
+.contact_map p{
+    font-family: proxima-nova-reg;
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 25px;
+}
+.contact_map iframe{
+    box-shadow: 0px 0px 4px 4px #ededed;
+    -webkit-box-shadow: 0px 0px 4px 4px #ededed;
+    -moz-box-shadow: 0px 0px 4px 4px #ededed;
+    -mos-box-shadow: 0px 0px 4px 4px #ededed; 
+    -o-box-shadow: 0px 0px 4px 4px #ededed;
+}
+.contact_form{
+    width: 540px;
+    float: left;
+    margin-bottom: 73px;
+    position: relative;
+}
+.contact_form p{
+    font-family: proxima-nova-reg;
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 25px;
+}
+.contact_form .massage{
+    width: 509px;
+    height: 207px;
+    border: 1px solid #d9d9d9;
+    background: #f2f2f2;
+    font-family: georgia-italic;
+    font-size: 16px;
+    color: #5f5f5f;
+    padding-left: 30px;
+    resize: none;
+    padding-top: 29px;
+    margin-bottom: 23px;
+}
+.contact_form .email{
+    width: 282px;
+    height: 60px;
+    border: 1px solid #d9d9d9;
+    background: #f2f2f2;
+    padding-left: 30px;
+    font-family: georgia-italic;
+    font-size: 16px;
+    color: #5f5f5f;
+    margin-right: 11px;
+}
+.contact_form .submit{
+    width: 204px;
+    height: 60px;
+    background: #6995a9;
+    font-family: gotham-bold;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 2px #ededed;
+    -webkit-box-shadow: 0px 0px 2px 2px #ededed;
+    -moz-box-shadow: 0px 0px 2px 2px #ededed;
+    -mos-box-shadow: 0px 0px 2px 2px #ededed; 
+    -o-box-shadow: 0px 0px 2px 2px #ededed;
+    border: 2px solid #fff;
+}
+.contact_form i{
+    color: #fff;
+    position: absolute;
+    top: 89.5%;
+    left: 71%;
+}
+/*end of contact*/
+#footer_bg{
+    background: #4f4f4f;
+    height: 80px;
+}
+#footer{
+    font-family: proxima-nova-reg;
+    font-size: 16px;
+    color: #6e6e6e;
+    line-height: 80px;
+}
+#footer .footer_left{
+    width: 730px;
+    float: left;
+}
+#footer .footer_left span{
+    color: #949494;
+}
+#footer .footer_right{
+    width: 170px;
+    float: left;
+}
+/*end of footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
